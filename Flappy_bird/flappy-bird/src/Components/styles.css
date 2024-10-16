@@ -1,0 +1,625 @@
+.background {
+  position: fixed; /* Фон фиксирован на месте */
+  top: 0;
+  left: 0;
+  width: 100%; /* Занимаем всю ширину экрана */
+  height: 100%; /* Занимаем всю высоту экрана */
+  overflow: hidden; /* Скрываем лишнее содержимое */
+}
+
+.leaderboard {
+  position: absolute;
+  top: 35px;
+  left: 27px;
+}
+
+.res-tabl {
+  width: 300px;
+}
+
+.leader-title {
+  font-size: 30px;
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: white;
+  font-weight: 200;
+  position: absolute;
+  left: 80px;
+  top: -15px;
+}
+
+.select {
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+  height: 30px;
+  font-size: 20px;
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: whitesmoke;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.day, .week {
+  color: black;
+}
+
+li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.rank-con {
+  border-radius: 10px;
+  width: 30px;
+  height: 22px;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  margin-bottom: 1.5px;
+}
+
+.perp {
+  position: absolute;
+  top: 520px;
+  left: 35px;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.silver {
+  background-color: silver;
+}
+
+.bronse {
+  background-color: orange;
+}
+
+.gold-medal {
+  position: absolute;
+  width: 60px;
+  top: 60px;
+  left: 27px;
+}
+
+.points {
+  margin-left: 5px;
+  font-size: 20px;
+  margin-right: 150px;
+}
+
+.point {
+  font-size: 27px;
+  top: 50px;
+  left: 214px;
+  position: absolute;
+}
+
+
+
+.point-c {
+  font-size: 50px;
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: white;
+  margin-left: 5px;
+}
+
+.name-con {
+  background-color:white;
+  border-radius: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ol{
+  list-style: none;
+}
+
+.name, .rank {
+  font-size: 17px;
+  font-family: "Jaro", sans-serif;
+  color: black;
+}
+
+.death-screen {
+  position: absolute;
+  background-size: contain;
+  top: 0;
+}
+
+.arise {
+  position: absolute;
+  top: 55%;
+  left: 27%;
+  width: 200px;
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: white;
+}
+
+.app-title {
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: white;
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Занимаем всю ширину экрана */
+  position: absolute;
+  top: 350px;
+}
+
+.store-page {
+  width: 100%; /* Занимаем всю ширину экрана */
+  height: 100%; /* Занимаем всю высоту экрана */
+  position: absolute;
+  background-repeat: repeat-x;
+  background-size: contain;
+  top: 0;
+  z-index: -2;
+}
+
+.store-down {
+  width: 100%; /* Занимаем всю ширину экрана */
+  position: absolute;
+  background-repeat: repeat-x;
+  background-size: contain;
+  top: 73%;
+  z-index: -1;
+}
+
+.bird-image {
+  width: 53%;
+  background-size: cover;
+}
+
+.back {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  border-radius: 50px;
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.buy {
+  font-size: 22px;
+  border-radius: 50px;
+  color: black;
+  font-family: "Jaro", sans-serif;
+}
+
+.bought {
+  font-size: 22px;
+  border-radius: 50px;
+  font-family: "Jaro", sans-serif;
+  color: black;
+  filter: brightness(75%);
+}
+
+.hide {
+  z-index: -2;
+}
+
+.logo {
+  width: 250px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 130px;
+}
+
+.rate {
+  width: 100px;
+}
+
+.gameover-png {
+  width: 400px;
+  top: 30px;
+  position: absolute;
+  left: 5px;
+}
+
+.start {
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+.skins {
+  position: absolute;
+  width: 370px;
+  top: 38%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product {
+  font-family: "Jaro", sans-serif;
+  display: flex;
+  color: white;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  background-color: white;
+}
+
+.sky {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.exit {
+  position: absolute;
+  top: 62%;
+  left: 40%;
+  width: 100px;
+}
+
+.store {
+  position: absolute;
+  top: 69%;
+  left: 40%;
+  width: 100px;
+}
+
+.backgrounds {
+  position: absolute;
+  top: 7%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-skin{
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  height: 160px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 7px;
+  background-color: white;
+}
+
+.point-container-c {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  font-size: 30px;
+  top: 10px;
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: white;
+}
+
+.point-container {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  font-size: 30px;
+  top: 160px;
+  font-family: "Jaro", sans-serif;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  color: white;
+}
+
+.backgroundmush-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('./backgroundmush.png'); /* Путь к изображению */
+  background-repeat: repeat; /* Повторяем изображение по обеим осям */
+  background-size: contain; /* Используем contain для полного отображения изображения */
+}
+
+.downnight-layer {
+  position: absolute;
+  top: 71%;
+  left: 0;
+  width: 200%; /* Делаем шире для эффекта бесконечности */
+  height: 45%;
+  background-image: url('./downforest.png'); /* Путь к изображению */
+  background-repeat: repeat; /* Повторяем изображение по обеим осям */
+  background-size: contain; /* Используем contain для полного отображения изображения */
+  z-index: 2;
+}
+
+.downmush-layer {
+  position: absolute;
+  top: 71%;
+  left: 0;
+  width: 200%; /* Делаем шире для эффекта бесконечности */
+  height: 45%;
+  background-image: url('./downmush.png'); /* Путь к изображению */
+  background-repeat: repeat; /* Повторяем изображение по обеим осям */
+  background-size: contain; /* Используем contain для полного отображения изображения */
+  z-index: 2;
+}
+
+.down-layer-1 {
+  animation: rotateDown 13s linear infinite; /* Анимация для первого слоя */
+}
+
+.down-layer-2 {
+  animation: rotateDown 13s linear infinite; /* Анимация для второго слоя */
+  left: 100%; /* Сдвигаем второй слой вправо для создания эффекта бесконечности */
+}
+
+.down-layer {
+  position: absolute;
+  top: 71%;
+  left: 0;
+  width: 200%; /* Делаем шире для эффекта бесконечности */
+  height: 45%;
+  background-image: url('./downcity.png'); /* Путь к изображению */
+  background-repeat: repeat; /* Повторяем изображение по обеим осям */
+  background-size: contain; /* Используем contain для полного отображения изображения */
+  z-index: 2;
+}
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Делаем шире для эффекта бесконечности */
+  height: 100%;
+  background-image: url('./backgroundcity.png'); /* Путь к изображению */
+  background-repeat: repeat; /* Повторяем изображение по обеим осям */
+  background-size: contain; /* Используем contain для полного отображения изображения */
+}
+
+.heart-buy {
+  width: 30%;
+}
+
+.plus-text {
+  position: relative;
+  font-size: 22px;
+  top: -25%;
+  left: 3%;
+}
+
+.plus-one {
+  font-family: "Jaro", sans-serif;
+  color: white;
+  text-shadow: 
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black; /* Черная обводка */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 7px;
+  background-color: white;
+}
+
+.hearts {
+  position: absolute;
+  top: 79%;
+  left: 19.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn {
+  width: 100px;
+}
+
+.backgroundnight-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('./backgroundforest.png'); /* Путь к изображению */
+  background-repeat: repeat; /* Повторяем изображение по обеим осям */
+  background-size: contain; /* Используем contain для полного отображения изображения */
+}
+
+@keyframes rotateDown {
+  from {
+    transform: translateX(0); /* Начальная позиция */
+  }
+  to {
+    transform: translateX(-50%); /* Перемещаем влево на половину ширины */
+  }
+}
+
+@keyframes rotateBackground {
+  from {
+    transform: translateX(0); /* Начальная позиция */
+  }
+  to {
+    transform: translateX(-50%); /* Перемещаем влево на половину ширины */
+  }
+}
+
+.score-zone {
+  width: 10px;
+}
+
+.background-layer-1 {
+  animation: rotateBackground 12.5s linear infinite; /* Анимация для первого слоя */
+}
+
+.background-layer-2 {
+  animation: rotateBackground 12.5s linear infinite; /* Анимация для второго слоя */
+  left: 100%; /* Сдвигаем второй слой вправо для создания эффекта бесконечности */
+}
+
+.player {
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  overflow: visible; 
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.bird {
+  width: 53px;
+  background-size: cover;
+}
+
+@keyframes movePipes {
+  0% {
+    transform: translateX(700px); /* Начинаем справа за пределами экрана */
+  }
+  100% {
+    transform: translateX(-70px); /* Перемещаем трубы влево на ширину трубы */
+  }
+}
+
+.pipe-container {
+  overflow-y: visible;
+  position: absolute; /* Позиционируем трубы абсолютно */
+  animation: movePipes linear infinite; /* Применяем анимацию */
+  animation-duration: 2.8s; /* Длительность анимации, можно настроить */
+  background-size: cover;
+  overflow: visible; 
+  top: -130px;
+  z-index: 0;
+}
+
+.pipe-collider {
+  position: relative; /* Позволяет позиционировать дочерние элементы */
+  overflow: visible; 
+  background-size: cover;
+}
+
+.pipe1, .pipe2 {
+  background-size: cover;
+  width: 100%; /* Занять всю ширину контейнера */
+  height: 100%; /* Занять всю высоту контейнера */
+}
+
+.tap-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tap {
+  width: 85px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.tap1, .tap2 {
+  width: 48px;
+}
+
+.clickable-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Занимает всю ширину родительского элемента */
+  height: 100vh; /* Занимает всю высоту родительского элемента */
+  z-index: 6;
+}
+
+.click-start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Занимает всю ширину родительского элемента */
+  height: 100vh; /* Занимает всю высоту родительского элемента */
+  z-index: 5;
+}
