@@ -97,7 +97,7 @@ bot.onText(/\/start/, (msg) => {
   userName = username;
   chatid = chatId;
 
-  const webAppUrl = "https://670e-95-25-52-87.ngrok-free.app";
+  const webAppUrl = "https://11dd-95-25-52-87.ngrok-free.app";
 
   bot.sendMessage(chatId, "goodie", {
     reply_markup: {
@@ -163,15 +163,39 @@ bot.onText(/\/start/, (msg) => {
     }
   });
 
-  setInterval(() => {
     // Проверяем кэш при старте
     checkCacheAndUpdate(chatId);
-  
-    // Устанавливаем интервал для проверки кэша каждые 6 минут
-    setInterval(() => {
-      checkCacheAndUpdate(chatId);
-    }, 60000); // 6 минут секунд
-  }, 60000);
+
+    // Функция для периодической проверки и обновления кэша
+const startCacheUpdater = () => {
+  setInterval(() => {
+    const keys = myCache.keys();
+    
+    keys.forEach((key) => {
+      const cachedUser = myCache.get(key);
+      if (!cachedUser) {
+        console.log(key, "Кэш истек, обновляем...");
+        checkCacheAndUpdate(key); // Обновляем кэш для истекшего ключа
+      }else {
+        console.log(key, "Кэш существует");
+      }
+    });
+
+    const weekKeys = weekCache.keys();
+    
+    weekKeys.forEach((key) => {
+      const cachedUserWeek = weekCache.get(key);
+      if (!cachedUserWeek) {
+        console.log(key, "Недельный кэш истек, обновляем...");
+        checkCacheAndUpdate(key); // Обновляем недельный кэш для истекшего ключа
+      }
+    });
+    
+  }, 600000); // Проверяем каждые 60 секунд (можно настроить по необходимости)
+};
+
+// Запускаем обновление кэша
+startCacheUpdater();
 
   if (username == admin) {
     bot.sendMessage(
